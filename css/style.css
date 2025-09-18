@@ -1,0 +1,268 @@
+/* L'arrière-plan général */
+
+html {
+	background-image: url('ptet.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+	/* Taille de référence pour la police, toutes les tailles relatives (rem, em) se basent sur cette valeur */
+	font-size: 16px;
+	justify-content: center;
+    align-items: center;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+/* /* La structure générale de la page  */
+/* Centre le titre en haut */
+.titre {
+	text-align: center;
+	justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+	margin-top: 20px; /* Distance par rapport au haut */
+}
+
+.titre h1 {
+	font-size: 2.5rem; /* Taille du titre */
+	color: #333;
+	margin: 0;
+}
+
+body {
+	size : 10;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center; 
+	font-weight: lighter;
+	
+}
+
+
+header {
+	width: 80%;
+	margin-top: 20px;
+	border: 2px solid black;
+	padding: 10px;
+	text-align: center;
+	background-color: #ae8252; /* Couleur de fond pour l'ensemble de la page */
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	
+}
+
+input[type="text"] {
+	padding: 5px;
+	font-size: 1rem;
+	width: 300px;
+}
+
+button {
+	padding: 5px 15px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+section {
+	width: 65%;
+	margin-top: 20px;
+	border: 2px solid black;
+	padding: 20px;
+	text-align: center;
+	min-height: 710px;
+	background-color: #ae8252; /* Couleur de fond pour l'ensemble de la page */
+}
+
+#result {
+	white-space: pre-wrap;
+	text-align: left;
+	margin-top: 10px;
+}
+
+/* Alignement du champ de texte et du bouton */
+.input-container {
+	display: flex;
+	align-items: center;
+	gap: 10px; /* Espace entre les éléments */
+	margin-bottom: 20px; /* Espace en dessous */
+}
+
+#fileName {
+	padding: 8px;
+	font-size: 16px;
+	flex: 1; /* Permet d'agrandir l'input si nécessaire */
+}
+
+
+
+#ContainerPlayers { /*Item contenant chaque joueur*/
+    display: flex;
+	flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px; 
+	justify-content: center; 
+    align-items: center;
+	align-self: auto;
+}
+
+#ContainerRound { /*Item contenant chaque round*/
+    display: flex;
+	flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px; 
+	justify-content: center; 
+    align-items: center;
+	align-self: auto;
+}
+
+#ContainerFinalResults { /*Item contenant les resultats finaux*/
+    display: flex;
+	flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px; 
+	justify-content: center; 
+    align-items: center;
+	align-self: auto;
+}
+
+.players{   /*classe players pour bien afficher les joueurs*/
+	display: flex;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 15px;
+	align-items: center;
+	justify-content: center;
+	background-color: #b0712e;
+
+}
+
+.round { /*classe rounds pour bien afficher les rounds*/
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 28px;
+    background-color: #d98e3e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: transform 0.5s;
+}
+
+.final {/*classe final pour bien afficher les scores finaux*/
+	border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #d98e3e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: transform 0.5s;
+}
+
+
+* { /*Pour formatter tout les boites comme on le veut*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p.id{ 
+	font-weight: bolder;
+}
+
+P.titles{	/*Pour mettre les titres en gras*/
+	text-align: left;
+	font-weight: bold;
+}
+
+h2{ /*Pour le changement quand on hover*/
+	transition: transform 0.5s; 
+}
+
+h2.titre{
+	border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 28px;
+    background-color: #b0712e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul { /*Retire les puces*/
+	list-style-type: none;
+  }
+
+hr{ /*S'occupe de la couleur du saut a la ligne et l'adapter au flexbox*/
+	border-color: #966837;
+	flex-grow: 1;
+}
+
+a{ /*Pour cacher les liens*/
+	text-decoration: none;
+	color:black ;
+}
+
+.container { 
+	display: flex;
+	align-items: center;
+	width:auto;
+	justify-content: space-between;
+}
+
+.button-left, .button-right { /*les boutons dans la vision round par round*/
+	justify-items: center;
+	align-items: align;
+	border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 28px;
+    background-color: #b0712e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: transform 0.5s;
+}
+
+
+
+.main { /*texte entre les deux boutons de la vision round par round*/
+	flex:1;
+	border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 28px;
+	margin-left: 10px;
+	margin-right: 10px;
+    background-color: #b0712e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main h3 {
+	margin-bottom: 20px;
+}
+
+.button-left:hover, .button-right:hover { /*Animation*/
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.round:hover { /*Animation*/
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.final:hover { /*Animation*/
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+h2.titre:hover { /*Animation*/
+    transform: scale(1.05); /* Slightly scale up the element */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+}
+
+

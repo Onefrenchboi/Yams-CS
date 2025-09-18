@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jeu de Yam's</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="img/android-chrome-192x192.png">
+        <link rel="stylesheet" href="../css/set.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header class="titre">
+            <div class="input-container">
+                <input type="text" id="fileName" placeholder="Entrez le nom du fichier JSON" name = "fileName">
+                <button onclick = "Main()">Charger</button>
+            </div>
+        <h1>Partie de Yam's</h1>
+        </header>
+
+            <section>
+                <h2>Vision globale d'une partie</h2><hr>
+                <div id="ContainerPlayers"></div>
+                <div id="separation1"></div>
+                <div id="ContainerRound"></div>
+                <div id="separation2"></div>
+                <div id="ContainerFinalResults"><h1>Rentrez le code d'une partie !!</h1></div>
+                <div id="separation3"></div>
+            </section>
+            <script src="js/globale.js"></script>
+
+    </body>
+</html>

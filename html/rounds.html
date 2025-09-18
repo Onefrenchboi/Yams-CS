@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jeu de Yam's</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="img/android-chrome-192x192.png">
+        <link rel="stylesheet" href="../css/set.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+		<header class="titre">
+			<div class="input-container">
+				<input type="text" id="fileName" placeholder="Entrez le nom du fichier JSON" name = "fileName">
+				<button onclick = "Main()">Charger</button>
+			</div>
+		<h1>Partie de Yam's</h1>
+		</header>
+            <section>
+                <h2>Vision d'un round</h2><hr>
+				<div class="container">
+					<button class="button-left" onclick="previous()">← Affichage du tour précédent</button>
+					<div id="main" class="main">
+						<h3>Affichage du tour en cours</h3>
+						<p>Rentrez le code d'une partie !!!</p>
+					</div>
+					<button class="button-right" onclick="next()">Affichage du tour suivant →</button>
+				</div>
+				<div id="ContainerFinalResults"></div>
+
+
+
+				<a href="projet.html"><p>Retour à l'autre page</p></a>
+
+            </section>
+            <script src="js/rounds.js"></script>
+    </body>
+</html>

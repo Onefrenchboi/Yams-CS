@@ -1,0 +1,25 @@
+{ 
+   "parameters": { 
+        "code": "TP1-Mathéo-Aymeric-Sarah", 
+       "date": "18-09-2025" 
+   }, 
+   "players": [ 
+       {
+       "id": "1", 
+       "pseudo": "aaa" 
+       },
+       {
+       "id": "2", 
+       "pseudo": "E" 
+       }
+],
+"rounds": [
+{
+   "id": 1,
+   "results": [
+    {
+       "id_player": 1,
+       "dice": [1,2,2,3,6],
+       "challenge": "nombre1",
+       "score": 1
+   }
