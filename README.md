@@ -16,3 +16,6 @@ Compilez le fichier [yams.cs](./yams.cs) avec **mcs**, et lancer l'exécutable
 $ csc yams.cs
 $ mono yams.exe
 ```     
+
+
+### La partie HTML est désormais inutilisable ! Le transfert du JSON se faisait grâce à un serveur fourni par l'enseignant, qui est désormais indisponible.
