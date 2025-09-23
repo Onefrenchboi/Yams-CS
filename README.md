@@ -13,7 +13,7 @@ Ce projet a pour but de créer un jeu de Yam's interactif, qui ecrit dans un fic
 Compilez le fichier [yams.cs](./yams.cs) avec **mcs**, et lancer l'exécutable
 
 ```console
-$ csc yams.cs
+$ mcs yams.cs
 $ mono yams.exe
 ```     
 
